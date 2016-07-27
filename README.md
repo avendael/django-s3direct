@@ -68,7 +68,7 @@ S3DIRECT_REGION = 'us-east-1'
 # cache_control [optional] Cache control headers, eg 'max-age=2592000'
 # content_disposition [optional] Useful for sending files as attachements
 # bucket [optional] Specify a different bucket for this particular object
-# server_side_encryption [optional] Encryption headers for buckets that require it
+# server_side_encryption [optional] Encryption headers for buckets that support it
 #
 S3DIRECT_DESTINATIONS = {
     # Allow anybody to upload any MIME type

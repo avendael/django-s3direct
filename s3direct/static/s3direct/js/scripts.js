@@ -105,7 +105,7 @@
         })
         form.append('file', file)
 
-        request('POST', url, form, {}, el, true, function(status, xml){
+        request('POST', url, form, {'x-amz-server-side-encryption': 'AES256'}, el, true, function(status, xml){
             disableSubmit(false)
             if(status !== 201) {
                 if (xml.indexOf('<MinSizeAllowed>') > -1) {
