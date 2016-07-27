@@ -104,6 +104,7 @@
             form.append(key, data[key])
         })
         form.append('file', file)
+        form.append('x-amz-server-side-encryption', 'AES256')
 
         request('POST', url, form, {'x-amz-server-side-encryption': 'AES256'}, el, true, function(status, xml){
             disableSubmit(false)
